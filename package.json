@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "react-chat-streamio-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

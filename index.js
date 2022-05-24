@@ -7,6 +7,12 @@ const app = express();
 app.use(express.json());
 const PORT = process.env.PORT || 5000;
 app.use(cors());
+app.use(
+  cors({
+    credentials: true,
+    origin: process.env.FRONT_END_CLIENT_URL,
+  })
+);
 
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
